@@ -1,0 +1,198 @@
+body{
+  background: linear-gradient(rgba(192, 192, 197, 0.342),rgba(192, 192, 199, 0.37));
+  background-size: cover;
+  background-position: center;
+}
+.container{
+position: relative;
+z-index: 800;
+width: 40%;
+/* padding: 20px; */
+background:rgba(196, 25, 96, 0.458);
+}
+.containerone{
+  position: relative;
+  z-index: 800;
+  width: 40%;
+  background:rgba(47, 84, 206, 0.553);
+  padding: 50px;
+  align-items: center;
+}
+.login-box{
+  max-width: 800px;
+  
+  margin: 20px auto;
+  border:  rgba(15, 6, 7, 0.842);
+}
+.login-left{
+  background:rgba(47, 84, 206, 0.553);
+  padding: 50px;
+  align-items: center;
+}
+.login-right{
+  background:rgba(196, 25, 96, 0.458);
+  padding:50px;
+  filter: blur;
+}
+
+.form-control{
+  background-color: transparent !important;
+}
+.background{
+  background-image: url(./components/background.jpg);
+  background-size: cover;
+  /* background-position: center; */
+}
+.backgroundone{
+  background:rgb(255,255,255);
+  background-size: cover;
+  /* background-position: center; */
+}
+/* style.css */
+*{
+  margin: 0;
+  padding:0;
+  font-family: Arial;
+}
+
+/* loginhome.php */
+/* .banner7{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(14.jpg);
+  background-size: cover;
+  background-position: center; 
+}*/
+.navbar{
+  width: 75%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+/* .logo{
+  width: 140px;
+  position: absolute;
+  top: 4%;
+  left:10%;
+  
+  /* cursor: progress; */
+/* } */ */
+
+.navbar ul li{
+  list-style: armenian;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  align-content: center;
+  font-size: medium;
+
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: rgb(10, 8, 8);
+  text-transform: uppercase;
+  text-decoration: double;
+  font-display: bold;
+  font-size: 20px;
+
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #04bba9;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+.content h1{
+  font-size: 50px;
+  margin-top: 40px;
+  animation: textanimation 1s ease-in-out;
+}
+@keyframes textanimation{
+  0%{
+      letter-spacing: 20px;
+  }
+  100% {
+      letter-spacing: 1px;
+  }
+}
+.content p{
+  margin:20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  animation: textanimation2 1s ease-in-out;
+}
+@keyframes textanimation{
+  0%{
+      transform: scale(0)
+  }
+  100% {
+      letter-spacing: 1px;
+  }
+}
+.content1{
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgb(27, 81, 230);
+}
+.content1 h1{
+  font-size: 50px;
+  margin-top: 40px;
+}
+.content1 p{
+  margin:20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius:25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
